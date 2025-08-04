@@ -24,6 +24,9 @@
     @if($filterDate)
         <div class="mb-2"><strong>Showing comments for date:</strong> {{ $filterDate }}</div>
     @endif
+    <div class="mb-3">
+        <a href="{{ url('/bible-reading/' . date('Y-m-d')) }}" class="btn btn-success">Go to Today\'s Bible Reading</a>
+    </div>
     <table class="table table-bordered">
         <thead>
             <tr>
