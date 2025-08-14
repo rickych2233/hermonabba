@@ -19,6 +19,10 @@
                 <div class="text-danger small">{{ $message }}</div>
             @enderror
         </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="remember" name="remember" {{ old('remember') ? 'checked' : '' }}>
+            <label class="form-check-label" for="remember">Remember Me</label>
+        </div>
         <button type="submit" class="btn btn-primary w-100">Login</button>
     </form>
     <div class="mt-3">
